@@ -11,6 +11,70 @@ export const getPost = /* GraphQL */ `
           id
           postID
           content
+          post {
+            id
+            title
+            comments {
+              items {
+                id
+                postID
+                content
+                post {
+                  id
+                  title
+                  comments {
+                    items {
+                      id
+                      postID
+                      content
+                      post {
+                        id
+                        title
+                        comments {
+                          items {
+                            id
+                            postID
+                            content
+                            post {
+                              id
+                              title
+                              comments {
+                                items {
+                                  id
+                                  postID
+                                  content
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
           createdAt
           updatedAt
         }
@@ -36,6 +100,63 @@ export const listPosts = /* GraphQL */ `
             id
             postID
             content
+            post {
+              id
+              title
+              comments {
+                items {
+                  id
+                  postID
+                  content
+                  post {
+                    id
+                    title
+                    comments {
+                      items {
+                        id
+                        postID
+                        content
+                        post {
+                          id
+                          title
+                          comments {
+                            items {
+                              id
+                              postID
+                              content
+                              post {
+                                id
+                                title
+                                comments {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
             createdAt
             updatedAt
           }
@@ -54,6 +175,79 @@ export const getComment = /* GraphQL */ `
       id
       postID
       content
+      post {
+        id
+        title
+        comments {
+          items {
+            id
+            postID
+            content
+            post {
+              id
+              title
+              comments {
+                items {
+                  id
+                  postID
+                  content
+                  post {
+                    id
+                    title
+                    comments {
+                      items {
+                        id
+                        postID
+                        content
+                        post {
+                          id
+                          title
+                          comments {
+                            items {
+                              id
+                              postID
+                              content
+                              post {
+                                id
+                                title
+                                comments {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
       createdAt
       updatedAt
     }
@@ -70,6 +264,76 @@ export const listComments = /* GraphQL */ `
         id
         postID
         content
+        post {
+          id
+          title
+          comments {
+            items {
+              id
+              postID
+              content
+              post {
+                id
+                title
+                comments {
+                  items {
+                    id
+                    postID
+                    content
+                    post {
+                      id
+                      title
+                      comments {
+                        items {
+                          id
+                          postID
+                          content
+                          post {
+                            id
+                            title
+                            comments {
+                              items {
+                                id
+                                postID
+                                content
+                                post {
+                                  id
+                                  title
+                                  createdAt
+                                  updatedAt
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              nextToken
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        nextToken
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          createdAt
+          updatedAt
+        }
         createdAt
         updatedAt
       }

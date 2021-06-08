@@ -9,4 +9,5 @@ type Comment @model
   id: ID!
   postID: ID!
   content: String!
+  post: Post @connection(fields: ["postID"])
 }

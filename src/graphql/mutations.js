@@ -14,6 +14,70 @@ export const createPost = /* GraphQL */ `
           id
           postID
           content
+          post {
+            id
+            title
+            comments {
+              items {
+                id
+                postID
+                content
+                post {
+                  id
+                  title
+                  comments {
+                    items {
+                      id
+                      postID
+                      content
+                      post {
+                        id
+                        title
+                        comments {
+                          items {
+                            id
+                            postID
+                            content
+                            post {
+                              id
+                              title
+                              comments {
+                                items {
+                                  id
+                                  postID
+                                  content
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
           createdAt
           updatedAt
         }
@@ -37,6 +101,70 @@ export const updatePost = /* GraphQL */ `
           id
           postID
           content
+          post {
+            id
+            title
+            comments {
+              items {
+                id
+                postID
+                content
+                post {
+                  id
+                  title
+                  comments {
+                    items {
+                      id
+                      postID
+                      content
+                      post {
+                        id
+                        title
+                        comments {
+                          items {
+                            id
+                            postID
+                            content
+                            post {
+                              id
+                              title
+                              comments {
+                                items {
+                                  id
+                                  postID
+                                  content
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
           createdAt
           updatedAt
         }
@@ -60,6 +188,70 @@ export const deletePost = /* GraphQL */ `
           id
           postID
           content
+          post {
+            id
+            title
+            comments {
+              items {
+                id
+                postID
+                content
+                post {
+                  id
+                  title
+                  comments {
+                    items {
+                      id
+                      postID
+                      content
+                      post {
+                        id
+                        title
+                        comments {
+                          items {
+                            id
+                            postID
+                            content
+                            post {
+                              id
+                              title
+                              comments {
+                                items {
+                                  id
+                                  postID
+                                  content
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
           createdAt
           updatedAt
         }
@@ -79,6 +271,79 @@ export const createComment = /* GraphQL */ `
       id
       postID
       content
+      post {
+        id
+        title
+        comments {
+          items {
+            id
+            postID
+            content
+            post {
+              id
+              title
+              comments {
+                items {
+                  id
+                  postID
+                  content
+                  post {
+                    id
+                    title
+                    comments {
+                      items {
+                        id
+                        postID
+                        content
+                        post {
+                          id
+                          title
+                          comments {
+                            items {
+                              id
+                              postID
+                              content
+                              post {
+                                id
+                                title
+                                comments {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
       createdAt
       updatedAt
     }
@@ -93,6 +358,79 @@ export const updateComment = /* GraphQL */ `
       id
       postID
       content
+      post {
+        id
+        title
+        comments {
+          items {
+            id
+            postID
+            content
+            post {
+              id
+              title
+              comments {
+                items {
+                  id
+                  postID
+                  content
+                  post {
+                    id
+                    title
+                    comments {
+                      items {
+                        id
+                        postID
+                        content
+                        post {
+                          id
+                          title
+                          comments {
+                            items {
+                              id
+                              postID
+                              content
+                              post {
+                                id
+                                title
+                                comments {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
       createdAt
       updatedAt
     }
@@ -107,6 +445,79 @@ export const deleteComment = /* GraphQL */ `
       id
       postID
       content
+      post {
+        id
+        title
+        comments {
+          items {
+            id
+            postID
+            content
+            post {
+              id
+              title
+              comments {
+                items {
+                  id
+                  postID
+                  content
+                  post {
+                    id
+                    title
+                    comments {
+                      items {
+                        id
+                        postID
+                        content
+                        post {
+                          id
+                          title
+                          comments {
+                            items {
+                              id
+                              postID
+                              content
+                              post {
+                                id
+                                title
+                                comments {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
       createdAt
       updatedAt
     }
