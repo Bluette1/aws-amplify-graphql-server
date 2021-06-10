@@ -1,6 +1,6 @@
 {
   "api": {
-    "awsamplifygraphql": {
+    "awsamplifygraphqlser": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
