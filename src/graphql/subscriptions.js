@@ -6,43 +6,459 @@ export const onCreatePost = /* GraphQL */ `
     onCreatePost {
       id
       title
-      comments {
+      editors {
         items {
           id
           postID
-          content
+          editorID
           post {
             id
             title
-            comments {
+            editors {
               items {
                 id
                 postID
-                content
+                editorID
                 post {
                   id
                   title
-                  comments {
+                  editors {
                     items {
                       id
                       postID
-                      content
+                      editorID
                       post {
                         id
                         title
-                        comments {
+                        editors {
                           items {
                             id
                             postID
-                            content
+                            editorID
                             post {
                               id
                               title
-                              comments {
+                              editors {
                                 items {
                                   id
                                   postID
-                                  content
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          editor {
+            id
+            username
+            posts {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
                                   createdAt
                                   updatedAt
                                 }
@@ -90,43 +506,459 @@ export const onUpdatePost = /* GraphQL */ `
     onUpdatePost {
       id
       title
-      comments {
+      editors {
         items {
           id
           postID
-          content
+          editorID
           post {
             id
             title
-            comments {
+            editors {
               items {
                 id
                 postID
-                content
+                editorID
                 post {
                   id
                   title
-                  comments {
+                  editors {
                     items {
                       id
                       postID
-                      content
+                      editorID
                       post {
                         id
                         title
-                        comments {
+                        editors {
                           items {
                             id
                             postID
-                            content
+                            editorID
                             post {
                               id
                               title
-                              comments {
+                              editors {
                                 items {
                                   id
                                   postID
-                                  content
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          editor {
+            id
+            username
+            posts {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
                                   createdAt
                                   updatedAt
                                 }
@@ -174,43 +1006,459 @@ export const onDeletePost = /* GraphQL */ `
     onDeletePost {
       id
       title
-      comments {
+      editors {
         items {
           id
           postID
-          content
+          editorID
           post {
             id
             title
-            comments {
+            editors {
               items {
                 id
                 postID
-                content
+                editorID
                 post {
                   id
                   title
-                  comments {
+                  editors {
                     items {
                       id
                       postID
-                      content
+                      editorID
                       post {
                         id
                         title
-                        comments {
+                        editors {
                           items {
                             id
                             postID
-                            content
+                            editorID
                             post {
                               id
                               title
-                              comments {
+                              editors {
                                 items {
                                   id
                                   postID
-                                  content
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          editor {
+            id
+            username
+            posts {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
                                   createdAt
                                   updatedAt
                                 }
@@ -253,48 +1501,743 @@ export const onDeletePost = /* GraphQL */ `
     }
   }
 `;
-export const onCreateComment = /* GraphQL */ `
-  subscription OnCreateComment {
-    onCreateComment {
+export const onCreatePostEditor = /* GraphQL */ `
+  subscription OnCreatePostEditor {
+    onCreatePostEditor {
       id
       postID
-      content
+      editorID
       post {
         id
         title
-        comments {
+        editors {
           items {
             id
             postID
-            content
+            editorID
             post {
               id
               title
-              comments {
+              editors {
                 items {
                   id
                   postID
-                  content
+                  editorID
                   post {
                     id
                     title
-                    comments {
+                    editors {
                       items {
                         id
                         postID
-                        content
+                        editorID
                         post {
                           id
                           title
-                          comments {
+                          editors {
                             items {
                               id
                               postID
-                              content
+                              editorID
                               post {
                                 id
                                 title
-                                comments {
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            editor {
+              id
+              username
+              posts {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      editor {
+        id
+        username
+        posts {
+          items {
+            id
+            postID
+            editorID
+            post {
+              id
+              title
+              editors {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            editor {
+              id
+              username
+              posts {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
                                   nextToken
                                 }
                                 createdAt
@@ -337,48 +2280,743 @@ export const onCreateComment = /* GraphQL */ `
     }
   }
 `;
-export const onUpdateComment = /* GraphQL */ `
-  subscription OnUpdateComment {
-    onUpdateComment {
+export const onUpdatePostEditor = /* GraphQL */ `
+  subscription OnUpdatePostEditor {
+    onUpdatePostEditor {
       id
       postID
-      content
+      editorID
       post {
         id
         title
-        comments {
+        editors {
           items {
             id
             postID
-            content
+            editorID
             post {
               id
               title
-              comments {
+              editors {
                 items {
                   id
                   postID
-                  content
+                  editorID
                   post {
                     id
                     title
-                    comments {
+                    editors {
                       items {
                         id
                         postID
-                        content
+                        editorID
                         post {
                           id
                           title
-                          comments {
+                          editors {
                             items {
                               id
                               postID
-                              content
+                              editorID
                               post {
                                 id
                                 title
-                                comments {
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            editor {
+              id
+              username
+              posts {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      editor {
+        id
+        username
+        posts {
+          items {
+            id
+            postID
+            editorID
+            post {
+              id
+              title
+              editors {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            editor {
+              id
+              username
+              posts {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
                                   nextToken
                                 }
                                 createdAt
@@ -421,48 +3059,359 @@ export const onUpdateComment = /* GraphQL */ `
     }
   }
 `;
-export const onDeleteComment = /* GraphQL */ `
-  subscription OnDeleteComment {
-    onDeleteComment {
+export const onDeletePostEditor = /* GraphQL */ `
+  subscription OnDeletePostEditor {
+    onDeletePostEditor {
       id
       postID
-      content
+      editorID
       post {
         id
         title
-        comments {
+        editors {
           items {
             id
             postID
-            content
+            editorID
             post {
               id
               title
-              comments {
+              editors {
                 items {
                   id
                   postID
-                  content
+                  editorID
                   post {
                     id
                     title
-                    comments {
+                    editors {
                       items {
                         id
                         postID
-                        content
+                        editorID
                         post {
                           id
                           title
-                          comments {
+                          editors {
                             items {
                               id
                               postID
-                              content
+                              editorID
                               post {
                                 id
                                 title
-                                comments {
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            editor {
+              id
+              username
+              posts {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
                                   nextToken
                                 }
                                 createdAt
@@ -499,6 +3448,1890 @@ export const onDeleteComment = /* GraphQL */ `
         }
         createdAt
         updatedAt
+      }
+      editor {
+        id
+        username
+        posts {
+          items {
+            id
+            postID
+            editorID
+            post {
+              id
+              title
+              editors {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            editor {
+              id
+              username
+              posts {
+                items {
+                  id
+                  postID
+                  editorID
+                  post {
+                    id
+                    title
+                    editors {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  editor {
+                    id
+                    username
+                    posts {
+                      items {
+                        id
+                        postID
+                        editorID
+                        post {
+                          id
+                          title
+                          editors {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        editor {
+                          id
+                          username
+                          posts {
+                            items {
+                              id
+                              postID
+                              editorID
+                              post {
+                                id
+                                title
+                                editors {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              editor {
+                                id
+                                username
+                                posts {
+                                  nextToken
+                                }
+                                createdAt
+                                updatedAt
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            nextToken
+                          }
+                          createdAt
+                          updatedAt
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      nextToken
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateUser = /* GraphQL */ `
+  subscription OnCreateUser {
+    onCreateUser {
+      id
+      username
+      posts {
+        items {
+          id
+          postID
+          editorID
+          post {
+            id
+            title
+            editors {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          editor {
+            id
+            username
+            posts {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateUser = /* GraphQL */ `
+  subscription OnUpdateUser {
+    onUpdateUser {
+      id
+      username
+      posts {
+        items {
+          id
+          postID
+          editorID
+          post {
+            id
+            title
+            editors {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          editor {
+            id
+            username
+            posts {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteUser = /* GraphQL */ `
+  subscription OnDeleteUser {
+    onDeleteUser {
+      id
+      username
+      posts {
+        items {
+          id
+          postID
+          editorID
+          post {
+            id
+            title
+            editors {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          editor {
+            id
+            username
+            posts {
+              items {
+                id
+                postID
+                editorID
+                post {
+                  id
+                  title
+                  editors {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                editor {
+                  id
+                  username
+                  posts {
+                    items {
+                      id
+                      postID
+                      editorID
+                      post {
+                        id
+                        title
+                        editors {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      editor {
+                        id
+                        username
+                        posts {
+                          items {
+                            id
+                            postID
+                            editorID
+                            post {
+                              id
+                              title
+                              editors {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            editor {
+                              id
+                              username
+                              posts {
+                                items {
+                                  id
+                                  postID
+                                  editorID
+                                  createdAt
+                                  updatedAt
+                                }
+                                nextToken
+                              }
+                              createdAt
+                              updatedAt
+                            }
+                            createdAt
+                            updatedAt
+                          }
+                          nextToken
+                        }
+                        createdAt
+                        updatedAt
+                      }
+                      createdAt
+                      updatedAt
+                    }
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
+        }
+        nextToken
       }
       createdAt
       updatedAt
